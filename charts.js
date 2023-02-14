@@ -55,10 +55,10 @@ function buildMetadata(sample) {
 }
 
 // Deliverable 1: 1. Create the buildChart function.
-function buildCharts(sample) {
+// function buildCharts(sample) {
   // Deliverable 1: 2. Use d3.json to load the samples.json file 
-  d3.json("samples.json").then((data) => {
-    console.log(data);
+  // d3.json("samples.json").then((data) => {
+  //   console.log(data);
 
     // Deliverable 1: 3. Create a variable that holds the samples array. 
 
@@ -78,19 +78,27 @@ function buildCharts(sample) {
     // Deliverable 1: 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order 
     // so the otu_ids with the most bacteria are last. 
-    var yticks = 
+    // var yticks = 
 
     // Deliverable 1: 8. Create the trace for the bar chart. 
-    var barData = [
+  //   var barData = [{
+  //     x: sample_values,
+  //     y:, 
+  //     name:, 
+  //     type: "bar",
+  //     orientation: "h"
 
-    ];
+
+  // }];
 
     // Deliverable 1: 9. Create the layout for the bar chart. 
-    var barLayout = {
+    // var barLayout = {
+    //   title: "Belly Button Bacteria"
 
-    };
+    // };
 
     // Deliverable 1: 10. Use Plotly to plot the data with the layout. 
+    // Plotly.newPlot("plot", bardata, barlayout);
 
     // Deliverable 2: 1. Create the trace for the bubble chart.
 
@@ -104,5 +112,5 @@ function buildCharts(sample) {
 
     // Deliverable 3: 6. Use Plotly to plot the gauge data and layout.
 
-  });
-}
+//   });
+// }
